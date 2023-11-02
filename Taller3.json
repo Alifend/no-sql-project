@@ -1,0 +1,15 @@
+{
+    "Producto":[
+
+        {
+            "id": "00001",
+            "nombre": "Jabon",
+            "descripcion": "Jabon suave para las manos",
+            "serie": "00001",
+            "categoria": "Aseo personal",
+            "precio": "3000",
+            "fechaCaducidad": "23-11-26",
+            "proveedor": "Protex" 
+        }
+    ]
+}
