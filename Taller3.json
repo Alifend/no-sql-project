@@ -56,7 +56,22 @@
     "Inventario": [
       {
         "IDInventario": 1,
-        "ProductoID": 1,
+        "Productos": [
+            {
+                "id_producto" : 1, 
+                "nombre" : "Televisor LED" , 
+                "cantidad_disponible" : 10 , 
+                "precio_unidad" : 499.99
+            },
+            
+            {
+                "id_producto" : 2, 
+                "nombre" : "Camiseta" , 
+                "cantidad_disponible" : 400 , 
+                "precio_unidad" : 19.99
+            }
+          
+        ],
         "TiendaID": 1,
         "CantidadEnStock": 50,
         "FechaLlegada": "2023-11-01",
@@ -65,7 +80,22 @@
       },
       {
         "IDInventario": 2,
-        "ProductoID": 2,
+        "Productos": [
+            {
+                "id_producto" : 1, 
+                "nombre" : "Televisor LED" , 
+                "cantidad_disponible" : 8 , 
+                "precio_unidad" : 499.99
+            },
+            
+            {
+                "id_producto" : 2, 
+                "nombre" : "Camiseta" , 
+                "cantidad_disponible" : 250 , 
+                "precio_unidad" : 19.99
+            }
+          
+        ]
         "TiendaID": 2,
         "CantidadEnStock": 100,
         "FechaLlegada": "2023-11-01",
@@ -79,13 +109,51 @@
         "IDCliente": 1,
         "NombreCliente": "Cliente A",
         "DireccionEnvio": "Calle de Envío 789",
-        "HistorialPedidos": []
+        "HistorialPedidos": [
+            {
+                "id_pedido" : 1,
+                "productos" : [
+                    {
+                        "id_producto" : 3,
+                        "nombre_producto" : "Leche" ,
+                        "costo_unidad" : 2.99,
+                        "cantidad" : 1
+                    },
+                    {
+                        "id_producto" : 1,
+                        "nombre_producto" : "Televisor led" ,
+                        "costo_unidad" : 499.99,
+                        "cantidad" : 2
+                    }
+                ],
+                "costo_total" :1002.97
+            }
+        ]
       },
       {
         "IDCliente": 2,
         "NombreCliente": "Cliente B",
         "DireccionEnvio": "Avenida de Envío 123",
-        "HistorialPedidos": []
+        "HistorialPedidos":[
+            {
+                "id_pedido" : 2,
+                "productos" : [
+                    {
+                        "id_producto" : 2,
+                        "nombre_producto" : "Camiseta" ,
+                        "costo_unidad" : 19.99,
+                        "cantidad" : 1
+                    },
+                    {
+                        "id_producto" : 3,
+                        "nombre_producto" : "Leche" ,
+                        "costo_unidad" : 2.99,
+                        "cantidad" : 3
+                    }
+                ],
+                "costo_total" :28.96
+            }
+        ]
       }
     ],
 
@@ -114,8 +182,7 @@
         "NombreProveedor": "Proveedor X",
         "DireccionProveedor": "Calle del Proveedor 456",
         "InformacionContacto": "proveedorx@email.com",
-        "ProductosSuministrados": [1, 3],
-        "ProductosPrecios": [
+        "ProductosSuministrados": [
             {
               "ProductoID": 1,
               "PrecioUnitario": 450.00,
@@ -129,8 +196,26 @@
               "CondicionesPago": "45 días netos"
             }
         ],
-
-        "Facturas": []
+          "Facturas" :[
+              {
+                  {
+                      "IDFactura": 1,
+                      "FechaFactura": "2023-11-05",
+                      "ProductosComprados": [
+                        {
+                          "ProductoID": 1,
+                          "CantidadComprada": 10
+                        },
+                        {
+                          "ProductoID": 3,
+                          "CantidadComprada": 200
+                        }
+                          }
+          ]
+        }
+              }
+          ]
+          
       },
         
       {
@@ -138,8 +223,7 @@
         "NombreProveedor": "Proveedor Y",
         "DireccionProveedor": "Avenida del Proveedor 789",
         "InformacionContacto": "proveedory@email.com",
-        "ProductosSuministrados": [2],
-        "ProductosPrecios": [
+        "ProductosSuministrados": [
             {
               "ProductoID": 2,
               "PrecioUnitario": 18.50,
@@ -147,8 +231,6 @@
               "CondicionesPago": "60 días netos"
             }
         ],
-
-        "Facturas": []
       }
     ],
 
@@ -192,9 +274,84 @@
     ],
 
     "Reportes": [
-      {
-        "IDInforme": 1,
-        "Datos": "Este es un informe de ejemplo"
-      }
+        {
+            "IDInforme": 456,
+            "Datos": {
+                "id_tienda" : 1,
+                "id_inventario" : 1,
+                "cantidad_productos" : 410
+            }
+        },
+        {
+            "IDInforme": 123,
+            "Datos": {
+                "id_tienda" : 1,
+                "id_inventario" : 1,
+                "costo_inventario" : 12995.9
+            }
+        },
+        {
+            "IDInforme": 458,
+            "Datos": {
+                "fecha_inicio" : 2023-09-30,
+                "fecha_fin" : 2023-12-01,
+                "productos_vendidos" : [
+                    {
+                        "id_producto" : 2,
+                        "nombre_producto" : "Camiseta",
+                        "cantidad" : 5
+                    },
+                ]
+        
+            }
+        },
+        {
+            "IDInforme": 233,
+            "Datos": [
+                {
+                    "id_proovedor" : 1,
+                    "productos_vende" : [
+                        {
+                            "ProductoID": 1,
+                            "PrecioUnitario": 450.00
+                        },
+                        {
+                             "ProductoID": 3,
+                             "PrecioUnitario": 2.75
+                        }
+                    ]
+        
+                },
+                {
+                    "id_proovedor" : 2,
+                    "productos_vende" : [
+                       {
+                           "ProductoID": 2,
+                           "PrecioUnitario": 18.50,
+                       }
+                    ]
+                }
+            ]
+        },
+        {
+            "id_producto" : 1,
+            "nombre_producto" : "Televisor"
+            "disponibilidad" : [
+                {
+                    "id_tienda" : 1,
+                    "disponibilidad_tienda" : 10
+                },
+                {
+                    "id_tienda": 2,
+                    "disponibilidad" : 8
+                },
+                {
+                    "id_tienda": 3,
+                    "disponibilidad" : 0
+                },
+                
+            ]
+        }
+            
     ]
-  }
+}
