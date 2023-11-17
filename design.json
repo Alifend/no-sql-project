@@ -24,14 +24,7 @@
       "city": "Cityville",
       "postalCode": "12345",
       "stockCapacity": 2000,
-      "timetable": "9:00 AM - 6:00 PM",
-      "products": [
-        {
-          "id": "1",
-          "name": "Laptop",
-          "stock": 50
-        }
-      ]
+      "timetable": "9:00 AM - 6:00 PM"
     }
   ],
   "stocks": [
@@ -134,11 +127,79 @@
   ],
   "reports": [
     {
-      "id": "1",
+      "id": 456,
       "data": {
-        "reportType": "Sales",
-        "totalSales": 5000
+        "shopId": 1,
+        "stockId": 1,
+        "stock": 410
       }
+    },
+    {
+      "id": 123,
+      "data": {
+        "shopId": 1,
+        "stockId": 1,
+        "stock": 12995.9
+      }
+    },
+    {
+      "id": 458,
+      "data": {
+        "startDate": "2023-09-30",
+        "finalDate": "2023-12-01",
+        "selledProducts": [
+          {
+            "id": 2,
+            "name": "Camiseta",
+            "stock": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": 233,
+      "data": [
+        {
+          "id": 1,
+          "selledProducts": [
+            {
+              "id": 1,
+              "price": 450.0
+            },
+            {
+              "id": 3,
+              "price": 2.75
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "selledProducts": [
+            {
+              "id": 2,
+              "price": 18.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Televisor",
+      "stocks": [
+        {
+          "shopId": 1,
+          "stock": 10
+        },
+        {
+          "shopId": 2,
+          "stock": 8
+        },
+        {
+          "shopId": 3,
+          "stock": 0
+        }
+      ]
     }
   ]
 }
