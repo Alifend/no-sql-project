@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "description": "Powerful laptop",
+      "serialNumber": 123456789,
+      "category": "Electronics",
+      "price": "$1000",
+      "expirationDate": "2023-12-31",
+      "suppliers": [
+        {
+          "id": "1",
+          "name": "Tech Supplier 1"
+        }
+      ]
+    }
+  ],
+  "shops": [
+    {
+      "location": "Downtown",
+      "name": "Bookstore",
+      "address": "456 Oak St",
+      "city": "Cityville",
+      "postalCode": "12345",
+      "stockCapacity": 2000,
+      "timetable": "9:00 AM - 6:00 PM",
+      "products": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "stock": 50
+        }
+      ]
+    }
+  ],
+  "stocks": [
+    {
+      "id": "1",
+      "product": {
+        "id": "1",
+        "name": "Laptop",
+        "price": "$1000"
+      },
+      "location": "Warehouse",
+      "stock": 500,
+      "arrivalDate": "2023-01-10",
+      "lastUpdatedDate": "2023-01-15",
+      "alertLevel": "MEDIUM"
+    }
+  ],
+  "clients": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "address": "123 Main St",
+      "orders": [
+        {
+          "id": "1",
+          "product": {
+            "id": "1",
+            "name": "Laptop",
+            "description": "Powerful laptop",
+            "serialNumber": 123456789,
+            "category": "Electronics",
+            "price": "$1000",
+            "expirationDate": "2023-12-31"
+          },
+          "quantity": 2,
+          "status": "DELIVERED",
+          "orderedDate": "2023-01-15"
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "client": {
+        "id": "1",
+        "name": "John Doe",
+        "address": "123 Main St"
+      },
+      "product": {
+        "id": "1",
+        "name": "Laptop",
+        "price": "$1000",
+        "expirationDate": "2023-12-31"
+      },
+      "quantity": 2,
+      "status": "DELIVERED",
+      "orderedDate": "2023-01-15"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "1",
+      "name": "Tech Supplier 1",
+      "address": "789 Tech St",
+      "informationContact": "info@techsupplier.com",
+      "products": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "price": "$1000"
+        }
+      ]
+    }
+  ],
+  "refunds": [
+    {
+      "id": "1",
+      "order": {
+        "id": "1",
+        "client": {
+          "id": "1",
+          "name": "John Doe",
+          "address": "123 Main St"
+        },
+        "product": {
+          "id": "1",
+          "name": "Laptop",
+          "price": "$1000",
+          "expirationDate": "2023-12-31"
+        },
+        "quantity": 2,
+        "status": "DELIVERED",
+        "orderedDate": "2023-01-15"
+      },
+      "reason": "Defective product",
+      "amount": 200,
+      "refundDate": "2023-01-20"
+    }
+  ],
+  "reports": [
+    {
+      "id": "1",
+      "data": {
+        "reportType": "Sales",
+        "totalSales": 5000
+      }
+    }
+  ]
+}
