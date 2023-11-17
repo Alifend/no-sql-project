@@ -1,161 +1,193 @@
 {
-    "Productos": [
-      {
-        "IDProducto": 1,
-        "NombreProducto": "Televisor LED",
-        "DescripcionProducto": "Televisor de alta definición",
-        "NumeroSerie": "TV123456",
-        "CategoriaProducto": "Electrónicos",
-        "PrecioUnitario": 499.99,
-        "ProveedorID": 1
-      },
-
-      {
-        "IDProducto": 2,
-        "NombreProducto": "Camiseta",
-        "DescripcionProducto": "Camiseta de algodón",
-        "NumeroSerie": "CM789012",
-        "CategoriaProducto": "Ropa",
-        "PrecioUnitario": 19.99,
-        "ProveedorID": 2
-      },
-
-      {
-        "IDProducto": 3,
-        "NombreProducto": "Leche",
-        "DescripcionProducto": "Leche desnatada",
-        "NumeroSerie": "LM345678",
-        "CategoriaProducto": "Alimentos Perecederos",
-        "PrecioUnitario": 2.99,
-        "FechaCaducidad": "2023-12-31",
-        "ProveedorID": 1
-      }
-    ],
-    
-    "Tiendas": [
-      {
-        "IDTienda": 1,
-        "NombreTienda": "Tienda A",
-        "Direccion": "Calle Principal 123",
-        "Ciudad": "Ciudad A",
-        "CodigoPostal": "12345",
-        "CapacidadAlmacenamiento": 1000,
-        "HorarioOperacion": "Lunes a Viernes: 9 AM - 9 PM, Sábado y Domingo: 10 AM - 6 PM"
-      },
-      {
-        "IDTienda": 2,
-        "NombreTienda": "Tienda B",
-        "Direccion": "Avenida Secundaria 456",
-        "Ciudad": "Ciudad B",
-        "CodigoPostal": "67890",
-        "CapacidadAlmacenamiento": 800,
-        "HorarioOperacion": "Lunes a Viernes: 10 AM - 8 PM, Sábado: 9 AM - 7 PM"
-      }
-    ],
-
-    "Inventario": [
-      {
-        "IDInventario": 1,
-        "ProductoID": 1,
-        "TiendaID": 1,
-        "CantidadEnStock": 50,
-        "FechaLlegada": "2023-11-01",
-        "FechaUltimaActualizacion": "2023-11-01",
-        "NivelAlertaReposicion": 10
-      },
-      {
-        "IDInventario": 2,
-        "ProductoID": 2,
-        "TiendaID": 2,
-        "CantidadEnStock": 100,
-        "FechaLlegada": "2023-11-01",
-        "FechaUltimaActualizacion": "2023-11-01",
-        "NivelAlertaReposicion": 20
-      }
-    ],
-
-    "Clientes": [
-      {
-        "IDCliente": 1,
-        "NombreCliente": "Cliente A",
-        "DireccionEnvio": "Calle de Envío 789",
-        "HistorialPedidos": []
-      },
-      {
-        "IDCliente": 2,
-        "NombreCliente": "Cliente B",
-        "DireccionEnvio": "Avenida de Envío 123",
-        "HistorialPedidos": []
-      }
-    ],
-
-    "Pedidos": [
-      {
-        "IDPedido": 1,
-        "ClienteID": 1,
-        "ProductoID": 1,
-        "CantidadPedida": 3,
-        "EstadoPedido": "Pendiente",
-        "FechaPedido": "2023-11-02"
-      },
-      {
-        "IDPedido": 2,
-        "ClienteID": 2,
-        "ProductoID": 2,
-        "CantidadPedida": 5,
-        "EstadoPedido": "Entregado",
-        "FechaPedido": "2023-11-01"
-      }
-    ],
-
-    "Proveedores": [
-      {
-        "IDProveedor": 1,
-        "NombreProveedor": "Proveedor X",
-        "DireccionProveedor": "Calle del Proveedor 456",
-        "InformacionContacto": "proveedorx@email.com",
-        "ProductosSuministrados": [1, 3],
-        "ProductosPrecios": [
+  "Productos": [
+    {
+      "IDProducto": 1,
+      "NombreProducto": "Televisor LED",
+      "DescripcionProducto": "Televisor de alta definición",
+      "NumeroSerie": "TV123456",
+      "CategoriaProducto": "Electrónicos",
+      "PrecioUnitario": 499.99,
+      "ProveedorID": 1
+    },
+    {
+      "IDProducto": 2,
+      "NombreProducto": "Camiseta",
+      "DescripcionProducto": "Camiseta de algodón",
+      "NumeroSerie": "CM789012",
+      "CategoriaProducto": "Ropa",
+      "PrecioUnitario": 19.99,
+      "ProveedorID": 2
+    },
+    {
+      "IDProducto": 3,
+      "NombreProducto": "Leche",
+      "DescripcionProducto": "Leche desnatada",
+      "NumeroSerie": "LM345678",
+      "CategoriaProducto": "Alimentos Perecederos",
+      "PrecioUnitario": 2.99,
+      "FechaCaducidad": "2023-12-31",
+      "ProveedorID": 1
+    }
+  ],
+  "Tiendas": [
+    {
+      "IDTienda": 1,
+      "NombreTienda": "Tienda A",
+      "Direccion": "Calle Principal 123",
+      "Ciudad": "Ciudad A",
+      "CodigoPostal": "12345",
+      "CapacidadAlmacenamiento": 1000,
+      "HorarioOperacion": "Lunes a Viernes: 9 AM - 9 PM, Sábado y Domingo: 10 AM - 6 PM"
+    },
+    {
+      "IDTienda": 2,
+      "NombreTienda": "Tienda B",
+      "Direccion": "Avenida Secundaria 456",
+      "Ciudad": "Ciudad B",
+      "CodigoPostal": "67890",
+      "CapacidadAlmacenamiento": 800,
+      "HorarioOperacion": "Lunes a Viernes: 10 AM - 8 PM, Sábado: 9 AM - 7 PM"
+    }
+  ],
+  "Inventario": [
+    {
+      "IDInventario": 1,
+      "TiendaID": 1,
+      "Productos": [
+        {
+          "id_producto": 1,
+          "nombre": "Televisor LED",
+          "cantidad_disponible": 10,
+          "precio_unidad": 499.99
+        },
+        {
+          "id_producto": 2,
+          "nombre": "Camiseta",
+          "cantidad_disponible": 40,
+          "precio_unidad": 19.99
+        }
+      ],
+      "CantidadEnStock": 50,
+      "FechaLlegada": "2023-11-01",
+      "FechaUltimaActualizacion": "2023-11-01",
+      "NivelAlertaReposicion": 10
+    },
+    {
+      "IDInventario": 2,
+      "TiendaID": 2,
+      "Productos": [
+        {
+          "id_producto": 1,
+          "nombre": "Televisor LED",
+          "cantidad_disponible": 8,
+          "precio_unidad": 499.99
+        },
+        {
+          "id_producto": 2,
+          "nombre": "Camiseta",
+          "cantidad_disponible": 250,
+          "precio_unidad": 19.99
+        }
+      ],
+      "CantidadEnStock": 100,
+      "FechaLlegada": "2023-11-01",
+      "FechaUltimaActualizacion": "2023-11-01",
+      "NivelAlertaReposicion": 20
+    }
+  ],
+  "Clientes": [
+    {
+      "IDCliente": 1,
+      "NombreCliente": "Cliente A",
+      "DireccionEnvio": "Calle de Envío 789",
+      "HistorialPedidos": [
+        {
+          "id_pedido": 1,
+          "productos": [
             {
-              "ProductoID": 1,
-              "PrecioUnitario": 450.00,
-              "TerminosEntrega": "Entrega semanal",
-              "CondicionesPago": "30 días netos"
+              "id_producto": 3,
+              "nombre_producto": "Leche",
+              "costo_unidad": 2.99,
+              "cantidad": 1
             },
             {
-              "ProductoID": 3,
-              "PrecioUnitario": 2.75,
-              "TerminosEntrega": "Entrega quincenal",
-              "CondicionesPago": "45 días netos"
+              "id_producto": 1,
+              "nombre_producto": "Televisor led",
+              "costo_unidad": 499.99,
+              "cantidad": 2
             }
-        ],
-
-        "Facturas": []
-      },
-        
-      {
-        "IDProveedor": 2,
-        "NombreProveedor": "Proveedor Y",
-        "DireccionProveedor": "Avenida del Proveedor 789",
-        "InformacionContacto": "proveedory@email.com",
-        "ProductosSuministrados": [2],
-        "ProductosPrecios": [
+          ],
+          "costo_total": 1002.97
+        }
+      ]
+    },
+    {
+      "IDCliente": 2,
+      "NombreCliente": "Cliente B",
+      "DireccionEnvio": "Avenida de Envío 123",
+      "HistorialPedidos": [
+        {
+          "id_pedido": 2,
+          "productos": [
             {
-              "ProductoID": 2,
-              "PrecioUnitario": 18.50,
-              "TerminosEntrega": "Entrega mensual",
-              "CondicionesPago": "60 días netos"
+              "id_producto": 2,
+              "nombre_producto": "Camiseta",
+              "costo_unidad": 19.99,
+              "cantidad": 1
+            },
+            {
+              "id_producto": 3,
+              "nombre_producto": "Leche",
+              "costo_unidad": 2.99,
+              "cantidad": 3
             }
-        ],
-
-        "Facturas": []
-      }
-    ],
-
-    "Facturas": [
+          ],
+          "costo_total": 28.96
+        }
+      ]
+    }
+  ],
+  "Pedidos": [
+    {
+      "IDPedido": 1,
+      "ClienteID": 1,
+      "ProductoID": 1,
+      "CantidadPedida": 3,
+      "EstadoPedido": "Pendiente",
+      "FechaPedido": "2023-11-02"
+    },
+    {
+      "IDPedido": 2,
+      "ClienteID": 2,
+      "ProductoID": 2,
+      "CantidadPedida": 5,
+      "EstadoPedido": "Entregado",
+      "FechaPedido": "2023-11-01"
+    }
+  ],
+  "Proveedores": [
+    {
+      "IDProveedor": 1,
+      "NombreProveedor": "Proveedor X",
+      "DireccionProveedor": "Calle del Proveedor 456",
+      "InformacionContacto": "proveedorx@email.com",
+      "ProductosSuministrados": [
+        {
+          "ProductoID": 1,
+          "PrecioUnitario": 450.00,
+          "TerminosEntrega": "Entrega semanal",
+          "CondicionesPago": "30 días netos"
+        },
+        {
+          "ProductoID": 3,
+          "PrecioUnitario": 2.75,
+          "TerminosEntrega": "Entrega quincenal",
+          "CondicionesPago": "45 días netos"
+        }
+      ],
+      "Facturas": [
         {
           "IDFactura": 1,
-          "ProveedorID": 1,
           "FechaFactura": "2023-11-05",
           "ProductosComprados": [
             {
@@ -167,34 +199,152 @@
               "CantidadComprada": 200
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "IDProveedor": 2,
+      "NombreProveedor": "Proveedor Y",
+      "DireccionProveedor": "Avenida del Proveedor 789",
+      "InformacionContacto": "proveedory@email.com",
+      "ProductosSuministrados": [
+        {
+          "ProductoID": 2,
+          "PrecioUnitario": 18.50,
+          "TerminosEntrega": "Entrega mensual",
+          "CondicionesPago": "60 días netos"
+        }
+      ],
+      "Facturas": [
         {
           "IDFactura": 2,
-          "ProveedorID": 2,
-          "FechaFactura": "2023-11-06",
+          "FechaFactura": "2023-11-05",
           "ProductosComprados": [
             {
-              "ProductoID": 2,
-              "CantidadComprada": 50
+              "ProductoID": 1,
+              "CantidadComprada": 10
+            },
+            {
+              "ProductoID": 3,
+              "CantidadComprada": 200
             }
           ]
         }
-    ],
-
-    "Devoluciones": [
-      {
-        "IDDevolucion": 1,
-        "PedidoRelacionadoID": 1,
-        "MotivoDevolucion": "Producto defectuoso",
-        "CantidadDevuelta": 1,
-        "FechaDevolucion": "2023-11-03"
+      ]
+    }
+  ],
+  "Facturas": [
+    {
+      "IDFactura": 1,
+      "ProveedorID": 1,
+      "FechaFactura": "2023-11-05",
+      "ProductosComprados": [
+        {
+          "ProductoID": 1,
+          "CantidadComprada": 10
+        },
+        {
+          "ProductoID": 3,
+          "CantidadComprada": 200
+        }
+      ]
+    },
+    {
+      "IDFactura": 2,
+      "ProveedorID": 2,
+      "FechaFactura": "2023-11-06",
+      "ProductosComprados": [
+        {
+          "ProductoID": 2,
+          "CantidadComprada": 50
+        }
+      ]
+    }
+  ],
+  "Devoluciones": [
+    {
+      "IDDevolucion": 1,
+      "PedidoRelacionadoID": 1,
+      "MotivoDevolucion": "Producto defectuoso",
+      "CantidadDevuelta": 1,
+      "FechaDevolucion": "2023-11-03"
+    }
+  ],
+  "Reportes": [
+    {
+      "IDInforme": 456,
+      "Datos": {
+        "id_tienda": 1,
+        "id_inventario": 1,
+        "cantidad_productos": 410
       }
-    ],
-
-    "Reportes": [
-      {
-        "IDInforme": 1,
-        "Datos": "Este es un informe de ejemplo"
+    },
+    {
+      "IDInforme": 123,
+      "Datos": {
+        "id_tienda": 1,
+        "id_inventario": 1,
+        "costo_inventario": 12995.9
       }
-    ]
-  }
+    },
+    {
+      "IDInforme": 458,
+      "Datos": {
+        "fecha_inicio": "2023-09-30",
+        "fecha_fin": "2023-12-01",
+        "productos_vendidos": [
+          {
+            "id_producto": 2,
+            "nombre_producto": "Camiseta",
+            "cantidad": 5
+          }
+        ]
+      }
+    },
+    {
+      "IDInforme": 233,
+      "Datos": [
+        {
+          "id_proovedor": 1,
+          "productos_vende": [
+            {
+              "ProductoID": 1,
+              "PrecioUnitario": 450.00
+            },
+            {
+              "ProductoID": 3,
+              "PrecioUnitario": 2.75
+            }
+          ]
+        },
+        {
+          "id_proovedor": 2,
+          "productos_vende": [
+            {
+              "ProductoID": 2,
+              "PrecioUnitario": 18.50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_producto": 1,
+      "nombre_producto": "Televisor",
+      "disponibilidad": [
+        {
+          "id_tienda": 1,
+          "disponibilidad_tienda": 10
+        },
+        {
+          "id_tienda": 2,
+          "disponibilidad": 8
+        },
+        {
+          "id_tienda": 3,
+          "disponibilidad": 0
+        }
+      ]
+    }
+  ]
+}
